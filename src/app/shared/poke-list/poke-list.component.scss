@@ -9,6 +9,8 @@ $padding: rem-calc(20);
     flex-wrap: wrap;
     padding: $padding 0;
 
+
+
     .pokemon {
       position: relative;
       display: flex;
@@ -25,6 +27,8 @@ $padding: rem-calc(20);
       text-decoration: none;
 
       color: var(--primary-color);
+
+      transform: scale(0.9);
 
       &__status {
         h2 {
@@ -68,8 +72,16 @@ $padding: rem-calc(20);
 
         img {
           width: rem-calc(60);
+          transform: scale(0.9);
+        }
+        img:hover{
+          transform: scale(1);
         }
       }
     }
+    .pokemon:hover{
+      transform: scale(1);
+    }
   }
+
 }
